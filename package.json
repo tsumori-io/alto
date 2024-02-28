@@ -9,7 +9,7 @@
         "clean": "rm -rf ./src/lib ./src/*.tsbuildinfo",
         "clean-modules": "rm -rf ./src/node_modules node_modules",
         "build": "pnpm -r run build",
-        "start": "node src/lib/cli/alto.js run --networkName local --signerPrivateKeys $PK --utilityPrivateKey $PK --minBalance $MIN_BALANCE --logLevel debug --rpcUrl $RPC --balanceOverrideEnabled false --noEthCallOverrideSupport true",
+        "start": "node src/lib/cli/alto.js run --entryPoint 0x5FF137D4b0FDCD49DcA30c7CF57E578a026d2789  --networkName local --signerPrivateKeys $PK --utilityPrivateKey $PK --minBalance $MIN_BALANCE --logLevel debug --rpcUrl $RPC --balanceOverrideEnabled false --noEthCallOverrideSupport true",
         "dev": "pnpm -r run dev",
         "test": "pnpm -r --workspace-concurrency 1 test --verbose=true",
         "test:spec": "./test/spec-tests/run-spec-tests.sh",
